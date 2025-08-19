@@ -3,7 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio Site</title>
+      <title>Bikram Giri | Portfolio</title>
       <link rel="stylesheet" href="style.css">
       <script src="https://kit.fontawesome.com/541a77e4bd.js" crossorigin="anonymous"></script>
      <!-- Google tag (gtag.js) -->
@@ -28,13 +28,13 @@
       <script src="script.js"></script>
 </head>
 <body>
-      <!-- ---------Header Section --------- -->
-      <div id="header">
+      <!-- ---------Navbar Section --------- -->
+      <div id="navbar">
             <div class="container">
                   <nav>
-                        <img src="images/logo.png" alt="Logo" class="logo">
+                        <a href="#home"><img src="images/logo1.png" alt="Logo" class="logo"></a>
                         <ul id="sidemenu">
-                              <li><a href="#header">Home</a></li>
+                              <li><a href="#home">Home</a></li>
                               <li><a href="#about">About</a></li>
                               <li><a href="#services">Services</a></li>
                               <li><a href="#portfolio">Portfolio</a></li>
@@ -43,158 +43,274 @@
                         </ul>
                         <i class="fas fa-bars" onclick="openmenu()"></i>
                   </nav>
-                  <div class="header-text">
-                        <p>FullStack Developer</p>
-                        <h1>Hi, I'm <span>Bikram</span><br>Giri From Ithari</h1>
-                  </div>
             </div>
       </div>
-      <!-- ---------About Section --------- -->
-      <div id="about">
-            <div class="container">
-                  <div class="row">
-                        <div class="about-col-1">
-                              <img src="images/user.png" alt="user">
-                        </div>
-                        <div class="about-col-2">
-                              <h1 class="sub-title">About Me</h1>
-                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit explicabo atque suscipit 
-                                    ea quia accusamus saepe, laudantium aliquam consequatur dolores, aut excepturi, 
-                                    voluptatum placeat debitis. Numquam nulla odio non consequatur? Laborum labore repellat 
-                                    non ab nihil laudantium a, earum accusantium aspernatur quae cum aliquam consequuntur? Vitae 
-                                    numquam quam nemo aut.</p>
-                              <div class="tab-titles">
-                                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                              </div>
-                              <div class="tab-contents active-tab" id="skills">
-                                    <ul>
-                                          <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                                          <li><span>Web Development</span><br>Web app Development</li>
-                                          <li><span>App Development</span><br>Building Android/iOS Apps</li>
-                                    </ul>
-                              </div>
-                              <div class="tab-contents" id="experience">
-                                    <ul>
-                                          <li><span>2021 - Current</span><br>UI/UX Design at ET Institute</li>
-                                          <li><span>2019 - 2021</span><br>Team lead at StartApp LLC.</li>
-                                          <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                                          <li><span>2016 - 2017</span><br>Intership at ekart eCommerce.</li>
-                                    </ul>
-                              </div>
-                              <div class="tab-contents" id="education">
-                                    <ul>
-                                          <li><span>2016</span><br>UI/UX Design Training at ET Institute.</li>
-                                          <li><span>2016</span><br>MBA from MIT Banglore.</li>
-                                          <li><span>2014</span><br>BBA from ISM Banglore.</li>
-                                    </ul>
-                              </div>
-                        </div>
-                  </div>
-            </div>
+
+  <!-- ---------Home Section --------- -->
+  <div id="home">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="home-col-1">
+          <div class="home-text">
+            <h2 class="home-title">Hello, myself</h2>
+            <h1 class="home-subtitle">Bikram Giri</h1>
+            <h2 class="home-description">I am a <span>FullStack Developer</span></h2>
+            <a href="#about" class="btn">Learn More</a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-icon">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          </div>    
+        </div>
+
+        <!-- Right Column -->
+        <div class="home-col-2">
+          <img src="images/home.jpeg" alt="home">
+        </div>
       </div>
-      <!-- ---------Services --------- -->
-       <div id="services">
-            <div class="container">
-                  <h1 class="sub-title">My Services</h1>
-                  <div class="services-list">
-                        <div>
-                              <i class="fa-solid fa-code"></i>
-                              <h2>Web Design</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-                              earum provident tempora odio dolores illum.</p>
-                              <a href="#">Learn More</a>
-                        </div>
-                        <div>
-                              <i class="fa-solid fa-crop"></i>
-                              <h2>UI/UX Design</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-                              earum provident tempora odio dolores illum.</p>
-                              <a href="#">Learn More</a>
-                        </div>
-                        <div>
-                              <i class="fa-brands fa-app-store"></i>
-                              <h2>App Design</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-                              earum provident tempora odio dolores illum.</p>
-                              <a href="#">Learn More</a>
-                        </div>
-                  </div>     
-            </div>
-       </div>
+    </div>
+  </div>
+
+<!-- ---------About Section --------- -->
+<div id="about">
+  <div class="container">
+    <h1 class="about-title">About Me</h1>
+    <div class="row">
       
-      <!-- ---------------Portfolio----------------- -->
-       <div id="portfolio">
+      <!-- Left Column: Image -->
+      <div class="about-col-1">
+        <img src="images/about.jpg" alt="user">
+      </div>
+
+      <!-- Right Column: Content -->
+      <div class="about-col-2">
+        <h2 class="about-name">Bikram Giri</h2>
+        <h3 class="about-role">FullStack Developer</h3>
+
+        <p class="about-text">
+          <span>Hi there!</span> I'm a passionate FullStack Developer with expertise in building dynamic and responsive web applications. 
+          I love creating seamless user experiences and writing clean, efficient code.
+        </p>
+
+        <!-- Tab Navigation -->
+        <div class="tab-titles">
+          <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Frontend Development</span><br>HTML, CSS, Tailwind CSS, JavaScript, React</li>
+            <li><span>Backend Development</span><br>Node.js, Express.js</li>
+            <li><span>Database Management</span><br>MongoDB, MySQL</li>
+            <li><span>WordPress Development</span><br>PHP, MySQL</li>
+            <li><span>Content Creation</span><br>Blogging, Video Editing</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2081 - Current</span><br>FullStack Developer at XYZ Company</li>
+            <li><span>2079 - 81</span><br>Frontend Developer at ABC Institute</li>
+            <li><span>2079</span><br>WordPress Developer at Coin Digital Ltd</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2075</span><br>School level from Gyanodaya Academy</li>
+            <li><span>2077 - 79</span><br>+2 from Koshi St James</li>
+            <li><span>2079 -</span><br>BSC.CSIT from Godawari College</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---------Services Section --------- -->
+<div id="services">
+  <div class="container">
+    <h1 class="services-title">My Services</h1>
+    <div class="services-list">
+
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Web design is the process of creating websites. It encompasses several aspects, including layout, content production, and graphic design.</p>
+        <a href="#" class="btn-service">Learn More</a>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-crop"></i>
+        <h2>WordPress Design</h2>
+        <p>WordPress design involves creating and customizing themes and layouts for WordPress websites, ensuring they are visually appealing and user-friendly.</p>
+        <a href="#" class="btn-service">Learn More</a>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-brands fa-app-store"></i>
+        <h2>Content Creation</h2>
+        <p>Content creation involves producing engaging and relevant content for various platforms, including blogs, social media, and websites.</p>
+        <a href="#" class="btn-service">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      
+<!-- -------- Portfolio Section -------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="portfolio-title">My Work</h1>
+    <p class="portfolio-subtitle">Here are some of the projects I've worked on:</p>
+
+    <div class="work-list">
+
+      <!-- Work Card -->
+      <div class="work-card">
+        <div class="work-img">
+          <img src="images/work-1.png" alt="KiranaNepal E-commerce">
+        </div>
+        <div class="work-content">
+          <h3>Student Management System</h3>
+          <p>
+            A comprehensive platform for managing student information, including enrollment, grades, and attendance.
+          </p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span class="more">+3 more</span>
+          </div>
+          <div class="work-links">
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Card Example 2 -->
+      <div class="work-card">
+        <div class="work-img">
+          <img src="images/work-2.png" alt="Product Management System">
+        </div>
+        <div class="work-content">
+          <h3>Product Management System</h3>
+          <p>
+            A web application to manage product information, inventory, and sales efficiently with analytics dashboard.
+          </p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+            <span class="more">+2 more</span>
+          </div>
+          <div class="work-links">
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+            <!-- Work Card Example 3 -->
+      <div class="work-card">
+        <div class="work-img">
+          <img src="images/work-3.png" alt="content Management System">
+        </div>
+        <div class="work-content">
+          <h3>Content Management System</h3>
+          <p>
+            A robust platform for creating, managing, and publishing digital content across various channels.
+          </p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+            <span class="more">+2 more</span>
+          </div>
+          <div class="work-links">
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- --------------- Contact ----------------- -->
+<div id="contact">
+  <div class="container">
+    <h1 class="sub-title">Contact Me</h1>
+    <div class="row">
+
+      <!-- Left Column -->
+      <div class="contact-left">
+        <h2>Contact Information</h2>
+        <div class="info-box">
+          <p><strong>Email</strong></p>
+          <p><i class="fa-solid fa-envelope"></i> bikramgiri264@gmail.com</p>
+        </div>
+        <div class="info-box">
+          <p><strong>Phone</strong></p>
+          <p><i class="fa-solid fa-phone"></i> +977 9819087786</p>
+        </div>
+        <div class="info-box">
+          <p><strong>Address</strong></p>
+          <p><i class="fa-solid fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+        </div>
+
+        <div class="social-icons">
+          <h3>Connect with me</h3>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="contact-right">
+        <h2>Message Me</h2>
+        <form name="submit-to-google-sheet">
+          <input type="text" id="name" name="Name" placeholder="Your Name" required>
+          <input type="email" id="email" name="Email" placeholder="Your Email" required>
+          <input type="text" id="subject" name="Subject" placeholder="Subject" required>
+          <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Send Message</button>
+        </form>
+         <div id="msg" class="msg"></div> <!-- message container -->
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- -----------footer----------- -->
+       <footer>
             <div class="container">
-                  <h1 class="sub-title">My Work</h1>
-                  <div class="work-list">
-                        <div class="work">
-                              <img src="images/work-1.png" alt="work-1">
-                              <div class="layer">
-                                    <h3>Social Media App</h3>
-                                    <p>The app connects you to the talented people around the world.
-                                     Download it from play store.
-                                    </p>
-                                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                              </div>
-                        </div>
-                        <div class="work">
-                              <img src="images/work-2.png" alt="work-2">
-                              <div class="layer">
-                                    <h3>Music App</h3>
-                                    <p>The app connects you to the talented people around the world.
-                                     Download it from play store.
-                                    </p>
-                                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                              </div>
-                        </div>
-                        <div class="work">
-                              <img src="images/work-3.png" alt="work-3">
-                              <div class="layer">
-                                    <h3>Online Shopping App</h3>
-                                    <p>The app connects you to the talented people around the world.
-                                     Download it from play store.
-                                    </p>
-                                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                              </div>
-                        </div>
-                  </div>
-                  <a href="#" class="btn">See more</a>
-            </div>
-       </div>
-      <!-- ---------------Contact----------------- -->
-       <div id="contact">
-            <div class="container">
-                  <div class="row">
-                        <div class="contact-left">
-                              <h1 class="sub-title">Contact Me</h1>
-                              <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
-                              <p><i class="fa-solid fa-phone-square"></i>+1234567890</p>
-                              <div class="social-icons">
-                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
-                                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
-                                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                              </div>
-                              <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-                        </div>
-                        <div class="contact-right">
-                              <form name="submit-to-google-sheet">
-                                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
-                                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
-                                    <input type="text" id="subject" name="Subject" placeholder="Subject" required>
-                                    <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
-                                    <button type="submit" onclick="sendMail()" class="btn btn2">Send Message</button>
-                              </form>
-                              <span id="msg"></span>
-                        </div>
+                  <div class="footer-content">
+                        <p>&copy; 2025 Bikram Giri. All rights reserved.</p>
                   </div>
             </div>
-            <div class="copyright">
-                  <p>&copy; 2025 Bikram Giri. All rights reserved.</p>
-            </div>
-       </div>
+       </footer>
 
       <script>
             var tablinks = document.getElementsByClassName("tab-links");
@@ -226,18 +342,20 @@
       const form = document.forms['submit-to-google-sheet']
       const msg = document.getElementById('msg')
 
-      form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-            msg.innerHTML = "Message sent successfully!";
-            setTimeout(() => {
-                  msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+form.addEventListener('submit', e => {
+  e.preventDefault(); // prevent form reload
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.textContent = "Message sent successfully!";
+      msg.classList.add("show");  // make message visible
+      form.reset();               // clear form fields
+      setTimeout(() => {
+        msg.classList.remove("show"); // hide after 3 seconds
+      }, 5000);
+    })
+    .catch(error => console.error('Error!', error.message));
+});
+
 </script>
 </body>
 </html>
